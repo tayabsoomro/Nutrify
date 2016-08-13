@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link href="assets/style.css" rel="stylesheet">
+      <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen" title="main">
+      <link href="assets/bootstrap/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="assets/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/main-page.css"/>
+
+      <link href="https://fonts.googleapis.com/css?family=Mogra|Open+Sans+Condensed:300" rel="stylesheet">
+
+      <script type="text/javascript" src="assets/other/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/other/blockui.min.js"></script>
+      <script type="text/javascript" src="assets/other/i18next.min.js"></script>
+      <script type="text/javascript" src="assets/other/segment-display.min.js"></script>
+      <script type="text/javascript" src="assets/other/bootstrap-tabdrop.min.js"></script>
+
+      <script type="text/javascript" src="assets/apprise/apprise.min.js"></script>
+
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="assets/ln.js"></script>
+      <script type="text/javascript" src="assets/app.js"></script>
+
+      <script type="text/javascript" src="assets/bootstrap/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/bootstrap-slider/modernizr.min.js"></script>
+      <script type="text/javascript" src="assets/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+      <script type="text/javascript">
+
+          $.blockUI.defaults.css.top = '45%';
+          $.blockUI.defaults.css.border = 'none';
+          $.blockUI.defaults.css.background = 'none';
+          $.blockUI.defaults.overlayCSS.opacity = 0.5;
+          $.blockUI.defaults.message = '<div style="margin: 17px; vertical-align: middle; display: inline-block"><i class="icon-cog icon-spin icon-4x"></i></div>';
+
+          $(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+
+      </script>
+      <title>Battery Status</title>
+    </head>
+    <body>
+      <div class="container-fluid">
+      <div class="row logo-area" style="padding: 5px;">
+        <h1><i class="fa fa-cutlery" aria-hidden="true"></i>&nbsp;&nbsp;Nutrify</h1>
+        <span class="slogan text-muted pull-right">Eat Healthy Live Healty</span>
+      </div>
+      <div class="run"></div>
+      <div class="col-lg-12">
+          <button type="button" name="choosepic" class="btn btn-inverse"><i class="fa fa-file-image-o pull-left" aria-hidden="true"></i>&nbsp;&nbsp;Choose a picture</button>
+          <div class="walk"></div>
+          <button type="button" name="takepic" class="btn btn-inverse"><i class="fa fa-camera pull-left" aria-hidden="true"></i>&nbsp;&nbsp;Take a picture</button>
+      </div>
+    </div>
+    <footer>Copyright &copy; Nutrify 2016</footer>
+    </body>
+</html>

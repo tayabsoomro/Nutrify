@@ -1,0 +1,414 @@
+<div class="page-header"><h1>Bootstrap Slider</h1></div>
+
+<p><small>Hevily modified Bootstrap Slider from <a onclick="app.openUrl('http://www.eyecon.ro/bootstrap-slider/');">eyecon.ro</a>. It supports Bootstrap's styles (rewritten version, original -- not) and has some extra features, but requires <em>Modernizr</em> to support touch events. 21,5 kB minified (with custom Modernizr).</small></p>
+
+<div style="width: 80%; margin-left: 10%">
+    
+    <input id="bootstrapSlider" style="width: 100%" />
+
+</div>
+
+<p></p>
+
+<p><small>Time: <span id="positionLabel"></span></small></p>
+
+<p><input id="bootstrapSlider2" value="" /></p>
+
+<p><input id="bootstrapSlider3" value="" data-slider-themed="true" data-slider-min="11" data-slider-max="2554" data-slider-step="9" data-slider-value="128" data-slider-tooltip="hide" data-slider-handle="triangle" data-slider-id="bootstrapSlider3Inner"/></p>
+
+<p></p>
+
+<div class="page-header"><h1>AJAX Example</h1></div>
+
+<p><small>Test AJAX / JSONP in PhoneGap, using <a onclick="app.openUrl('http://www.jsontest.com/');">JSON Test</a>.</small></p>
+
+<p>
+    
+    <a id="ipButton" class="btn btn-inverse"><i class="icon-search icon-white"></i> IP Address</a>
+    
+    <a id="timeButton" class="btn"><i class="icon-time"></i> Time</a>
+    
+    <a id="md5Button" class="btn btn-primary"><i class="icon-random"></i> MD5 Hash</a>
+
+</p>
+
+<p>More information, resources and examples:</p>
+
+<ul>
+
+    <li><a onclick="app.openUrl('http://samcroft.co.uk/2011/updated-loading-data-in-phonegap-using-jquery-1-5/');">Loading external data into PhoneGap app</a>,</li>
+    
+    <li><a onclick="app.openUrl('http://samcroft.co.uk/2012/posting-data-from-a-phonegap-app-to-a-server-using-jquery/');">Posting data from a PhoneGap app to a server</a>,</li>
+    
+    <li><a onclick="app.openUrl('http://www.jsontest.com/');">Simple testing for JSON-based applications</a>,</li>
+    
+    <li><a onclick="app.openUrl('http://stackoverflow.com/questions/3543513/how-to-parse-jsonp-data-returned-from-remote-server');">How to parse JSONP data from remote server</a>.</li>
+
+</ul>
+
+<div class="page-header"><h1>Digital Clock</h1></div>
+
+<p>Pure JS digital display from <a onclick="app.openUrl('http://www.3quarks.com/en/SegmentDisplay/index.html');">3quarks.com</a>.</p>
+
+
+<p style="width: 250px; margin: 0 auto">
+    
+    <canvas id="segment-clock" width="250" height="50">Your browser is not supported!</canvas>
+    
+</p>
+
+<p style="width: 250px; margin: 0 auto">
+
+    <canvas id="segment-display" width="250" height="50">Your browser is not supported!</canvas>
+
+</p>
+
+<p>If you see some look & feel errors (incorrect placement, some shearing), note, that they might (!) be caused by a lot of code (JS & CSS; many examples) in this demo and may or may not occur in your application, that will (probably) use much less of a code...</p>
+
+<div class="page-header"><h1>TB Carousel</h1></div>
+
+<div class="bs-docs-example" style="max-width: 800px">
+    
+    <div id="myCarousel" class="carousel slide">
+
+        <ol class="carousel-indicators">
+
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            
+            <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+            
+            <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+            
+            <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+            
+            <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="item active">
+
+                <img src="images/nature01.jpg" alt="">
+
+                <div class="carousel-caption">
+
+                    <h4>First Thumbnail label</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/nature02.jpg" alt="">
+
+                <div class="carousel-caption">
+
+                    <h4>Second Thumbnail label</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/nature03.jpg" alt="">
+
+                <div class="carousel-caption">
+
+                    <h4>Third Thumbnail label</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/nature04.jpg" alt="">
+
+                <div class="carousel-caption">
+
+                    <h4>Fourth Thumbnail label</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/nature05.jpg" alt="">
+
+                <div class="carousel-caption">
+
+                    <h4>Fifth Thumbnail label</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/nature06.jpg" alt="">
+
+                <div class="carousel-caption">
+
+                    <h4>Sixth Thumbnail label</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <img src="images/nature07.jpg" alt="">
+
+                <div class="carousel-caption">
+
+                    <h4>Seventh Thumbnail label</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+
+    /**
+     * The clock & the display
+     */
+    function animateTheDisplays()
+    {
+        var
+            time = new Date(),
+            hours = time.getHours(),
+            minutes = time.getMinutes(),
+            seconds = time.getSeconds(),
+            milliseconds  = time.getMilliseconds(),
+            text = '           Phone Gap with Segment Display rocks...           ',
+            index = (2 * (seconds + 60 * minutes + 24 * 60 * hours) + Math.floor(milliseconds / 500)) % (text.length - 6),
+            value = ((hours < 10) ? '0' : '') + hours + ':' + ((minutes < 10) ? '0' : '') + minutes + ':' + ((seconds < 10) ? '0' : '') + seconds;
+
+        theClock.setValue(value);
+        
+        theDisplay.setValue(text.substr(index, 16));
+    }
+
+    var theClock = new SegmentDisplay('segment-clock');
+    var theDisplay = new SegmentDisplay('segment-display');
+
+    theClock.pattern         = '##:##:##';
+    theClock.displayAngle    = 5;
+    theClock.digitHeight     = 20;
+    theClock.digitWidth      = 15;
+    theClock.digitDistance   = 2.5;
+    theClock.segmentWidth    = 2;
+    theClock.segmentDistance = 0.1;
+    theClock.segmentCount    = 7;
+    theClock.cornerType      = 3;
+    theClock.colorOff        = 'rgba(200, 200, 200, 0.3)';
+
+    theDisplay.pattern         = '################';
+    theDisplay.displayAngle    = 5;
+    theDisplay.digitHeight     = 20;
+    theDisplay.digitWidth      = 15;
+    theDisplay.digitDistance   = 2.5;
+    theDisplay.segmentWidth    = 2;
+    theDisplay.segmentDistance = 0.1;
+    theDisplay.segmentCount    = 16;
+    theDisplay.cornerType      = 0;
+    theDisplay.colorOff        = 'rgba(200, 200, 200, 0.3)';
+    
+    theClock.colorOn = theDisplay.colorOn = $('h1').css('color');
+
+    theClock.draw();
+    theDisplay.draw();
+
+    animateTheDisplays();
+    setInterval(function(){animateTheDisplays()}, 100);
+    
+    /**
+     * jQuery
+     */
+    jQuery(function($)
+    {
+        /**
+         * AJAX Examples
+         */
+        function connectionOrInternetError()
+        {
+            if(app.modalDialogDisplayed) return false;
+            
+            apprise("<strong>Error loading data!</strong><br /><br />You're not connected to the Internet or an error occured when getting server reply.", {'textOk':'Got that!'}, function()
+            {
+                app.modalDialogDisplayed = false;
+            });
+            
+            return false;
+        }
+        
+        $('body').on('click', '#ipButton', function()
+        {
+            if(app.isConnected())
+            {
+                $.ajax
+                ({
+                    type : "GET",
+                    dataType : "jsonp",
+                    url : 'http://ip.jsontest.com/',
+                    data : {},
+                    success: function(data)
+                    {
+                        apprise('<div style="text-align: center">Your IP Address is:<br /><code>' + data.ip + '</code></div>', {'textOk':'Great, thanks!'});
+                    },
+                    error: connectionOrInternetError
+                });
+            }
+            else connectionOrInternetError();
+        });
+        
+        $('body').on('click', '#timeButton', function()
+        {
+            if(app.isConnected())
+            {
+                $.ajax
+                ({
+                    type : "GET",
+                    dataType : "jsonp",
+                    url : 'http://date.jsontest.com/',
+                    data : {},
+                    success: function(data)
+                    {
+                        apprise('<div style="text-align: center">Current date is:<br /><code>' + data.date + '</code><br /><br />Current time (UTC) is:<br /><code>' + data.time + '</code><br /><br />We\'ve <code>' + data.milliseconds_since_epoch + '</code> milliseconds since Epoch.', {});
+                    },
+                    error: connectionOrInternetError
+                });
+            }
+            else connectionOrInternetError();
+        });
+        
+        $('body').on('click', '#md5Button', function()
+        {
+            if(app.isConnected())
+            {
+                apprise('Enter ANY text', {'input':true, 'textOk':'Go!', 'textCancel':'Nope...'}, function(r)
+                {
+                    if(typeof(r) === 'string')
+                    {
+                        $.ajax
+                        ({
+                            type : "GET",
+                            dataType : "jsonp",
+                            url : 'http://md5.jsontest.com/?text=' + r,
+                            data : {},
+                            success: function(data)
+                            {
+                                apprise('<div style="text-align: center">MD5 hash of:<br /><strong>' + data.original + '</strong><br /><br />is:<br /><strong>' + data.md5 + '</strong></div>', {});
+                            },
+                            error: connectionOrInternetError
+                        });
+                    }
+                });
+            }
+            else connectionOrInternetError();
+        });
+        
+        /**
+         * Bootstrap Slider
+         * 
+         * http://www.eyecon.ro/bootstrap-slider/
+         */
+        function timestamp4TodayMidnight()
+        {
+            var
+                now = new Date(),
+                startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+        
+            return startOfDay / 1000;
+        }
+        
+        function timestamp2String(timestamp)
+        {
+            var
+                date = new Date(timestamp * 1000),
+                hours = (date.getHours() < 10 ? '0' + date.getHours() : date.getHours()),
+                minutes = (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()),
+                seconds = (date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds()),
+                formattedTime = hours + ':' + minutes + ':' + seconds;
+
+            return formattedTime;
+        }
+        
+        function fillTimeLabel(value)
+        {
+            var
+                timestamText = value + ' seconds since Midnight',
+                timeText = timestamp2String(timestamp4TodayMidnight() + value);
+                
+            $("#positionLabel").html('<strong>' + timeText + '</strong> (' + timestamText + ')');
+        }
+        
+        $("#bootstrapSlider").slider
+        ({
+            min: 0,
+            max: 86399,
+            value: 41115,
+            themed: true,
+//            selectionClass: 'btn-info',
+//            trackOverflow: false,
+//            height: 21,
+            formater: function(value)
+            {
+                return timestamp2String(timestamp4TodayMidnight() + value);
+            }
+        })
+        .on('slide', function(ev)
+        {
+            fillTimeLabel(ev.value)
+        });
+        
+        fillTimeLabel($("#bootstrapSlider").slider('getValue'));
+        
+        $("#bootstrapSlider2").slider
+        ({
+            min: 0,
+            max: 100,
+            step: 10,
+            themed: true,
+            value: [30,70],
+            handle: 'rectangle',
+            id: 'bootstrapSlider2Inner'
+        });
+        
+        $("#bootstrapSlider3").slider();
+    });
+/*]]>*/
+</script>
