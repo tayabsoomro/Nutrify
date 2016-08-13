@@ -61,6 +61,14 @@ module.exports = [
         "id": "cordova-plugin-camera.CameraProxy",
         "pluginId": "cordova-plugin-camera",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-image-picker/www/imagepicker.js",
+        "id": "cordova-plugin-image-picker.ImagePicker",
+        "pluginId": "cordova-plugin-image-picker",
+        "clobbers": [
+            "plugins.imagePicker"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -70,7 +78,8 @@ module.exports.metadata =
     "cordova-plugin-geolocation": "2.2.0",
     "cordova-plugin-vibration": "2.1.1",
     "cordova-plugin-camera": "2.2.0",
-    "cordova-plugin-compat": "1.0.0"
+    "cordova-plugin-compat": "1.0.0",
+    "cordova-plugin-image-picker": "1.1.1"
 }
 // BOTTOM OF METADATA
 });
