@@ -1,0 +1,43 @@
+{
+    "phonegap":
+    {
+        "loader": "请等待，加载...",
+        "description": "这是只限于设定的PhoneGap API的例子。它不包括整个API。如果你需要测试的功能，在这里失踪的，在互联网上搜索更复杂的PhoneGap API演示。只有前两（连接和加速度计）翻译成其他语言的例子。",
+        "connection":
+        {
+            "title": "连接",
+            "label": "连接类型"
+        },
+        "acceleration":
+        {
+            "start": "开始",
+            "stop": "停止",
+            "title": "加速度计",
+            "line1": "加速在<strong>__axis__</strong>轴是<strong>__acceleration__</strong>的。",
+            "line2": "当前时间戳是<strong>__timestamp__</strong>的。",
+            "error": "获得加速度计的数据时出错..."
+        }
+    },
+    "buttons":
+    {
+        "info": "设备",
+        "style": "风格",
+        "acrid": "网页",
+        "language": "语"
+    },
+    "tabs":
+    {
+        "bootstrap": "自举",
+        "javascript": "Javascript的",
+        "phonegap": "PhoneGap的"
+    },
+    "messages":
+    {
+        "no": "没有",
+        "yes":"是",
+        "exit": "真的退出此应用程序吗？",
+        "menu": "当前语言：<em>__language__</em> -- <strong>__local__</strong> <code>__code__</code>",
+        "style": "<strong>选择Bootswatch.com从下拉风格.</strong><br /><br />这仅仅是一个例子，样式表的更改不会被记住。<br /><br />通知，大多数非标准样式表从互联网下载额外的字体。让他们在本地，以避免额外的应用程序用户的成本！",
+        "language": "<strong>选择语言使用下拉。</strong><br /><br />这仅仅是一个例子，只有几串实际上是翻译，唯一的机器翻译通过谷歌翻译。"
+    }
+}

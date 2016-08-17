@@ -41,7 +41,7 @@
           $(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
 
       </script>
-      <title>Battery Status</title>
+      <title>Nutrify - Eat Healthy. Live Healthy</title>
     </head>
     <body>
       <div class="container-fluid">
@@ -49,16 +49,14 @@
         <h1><i class="fa fa-cutlery" aria-hidden="true"></i>&nbsp;&nbsp;Nutrify</h1>
         <span class="slogan text-muted pull-right">Eat Healthy Live Healty</span>
       </div>
-      <div class="walk">
-
-      </div>
+      <div class="walk"></div>
       <div class="col-lg-12">
         <div class="run">
           <img id="largeImage" src="http://placehold.it/350x250" width="350" height="250"/>
         </div>
       </div>
       <div class="col-lg-12" style="margin-top: 150px;">
-          <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);" type="button" id="choosepic" name="choosepic" class="btn btn-inverse"><i class="fa fa-file-image-o pull-left" aria-hidden="true"></i>&nbsp;&nbsp;Choose a picture</button>
+          <button onclick="getPhoto(pictureSource.CAMERA);" type="button" id="choosepic" name="choosepic" class="btn btn-inverse"><i class="fa fa-file-image-o pull-left" aria-hidden="true"></i>&nbsp;&nbsp;Choose a picture</button>
       </div>
 
     </div>
@@ -81,29 +79,9 @@
 
     // Called when a photo is successfully retrieved
     //
-    function onPhotoDataSuccess(imageData) {
-      // Uncomment to view the base64 encoded image data
-      // console.log(imageData);
-
-      // Get image handle
-      //
-      var smallImage = document.getElementById('smallImage');
-
-      // Unhide image elements
-      //
-      smallImage.style.display = 'block';
-
-      // Show the captured photo
-      // The inline CSS rules are used to resize the image
-      //
-      smallImage.src = "data:image/jpeg;base64," + imageData;
-    }
-
-    // Called when a photo is successfully retrieved
-    //
     function onPhotoURISuccess(imageURI) {
       // Uncomment to view the image file URI
-      // console.log(imageURI);
+      document.getElementById("choosepic").innerHTML = imageURI;
 
       // Get image handle
       //
@@ -117,22 +95,29 @@
       // The inline CSS rules are used to resize the image
       //
       largeImage.src = imageURI;
+
+      var options = new FileUploadOptions();
+      options.fileKey = "file";
+      options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+      options.mimeType="image/jpeg";
+
+      var params = new Object();
+      params.value1 = "test";
+      params.value2 = "param";
+
+      options.params = params;
+      options.chunkedMode = false;
+
+      var ft = new FileTransfer();
+      ft.upload(imageURI, "http://www.tayabsoomro.me/upload.php", win, fail, options);
     }
 
-    // A button will call this function
-    //
-    function capturePhoto() {
-      // Take picture using device camera and retrieve image as base64-encoded string
-      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-        destinationType: destinationType.DATA_URL });
+    function win(r){
+      alert(JSON.stringify(r));
     }
 
-    // A button will call this function
-    //
-    function capturePhotoEdit() {
-      // Take picture using device camera, allow edit, and retrieve image as base64-encoded string
-      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
-        destinationType: destinationType.DATA_URL });
+    function fail(error){
+      alert("An error occured while uploading image: " + error.code);
     }
 
     // A button will call this function
@@ -150,6 +135,26 @@
       alert('Failed because: ' + message);
     }
 
+    </script>
+    <script type="text/javascript">
+    $("#largeImage").on('load',function() {
+      var userCapturedImage = $("#largeImage").attr("src");
+      var finalURL = 'https://api.clarifai.com/v1/tag/?model=food-items-v1.0&url=' + userCapturedImage;
+      alert(finalURL);
+      $.ajax({
+          url: finalURL,
+          type: 'GET',
+          dataType: 'json',
+          contentType: "application/json",
+          beforeSend: function(xhr) {
+               xhr.setRequestHeader("Authorization", "Bearer urjuWGER2XVvlVaQTFYg4V7uRDjoLl")
+          },
+          success: function(data){
+
+              alert(JSON.stringify(data));
+          }
+      });
+    });
     </script>
     </body>
 </html>

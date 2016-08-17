@@ -1,0 +1,43 @@
+{
+    "phonegap":
+    {
+        "loader": "Please wait, loading...",
+        "description": "This is only limited set of PhoneGap API examples. It does not cover entire API. If you need to test features, that are missing here, search the Internet for more complex PhoneGap API demos. Only first two (Connection and Accelerometer) examples are translated into other languages.",
+        "connection":
+        {
+            "title": "Connection",
+            "label": "Connection type"
+        },
+        "acceleration":
+        {
+            "start": "Start",
+            "stop": "Stop",
+            "title": "Accelerometer",
+            "line1": "Acceleration in the <strong>__axis__</strong> axis is <strong>__acceleration__</strong>.",
+            "line2": "Current timestamp is \"<strong>__timestamp__</strong>\".",
+            "error": "Error getting data from the accelerometer..."
+        }
+    },
+    "buttons":
+    {
+        "info": "Device",
+        "style": "Style",
+        "acrid": "Webpage",
+        "language": "Language"
+    },
+    "tabs":
+    {
+        "bootstrap": "Bootstrap",
+        "javascript": "Javascript",
+        "phonegap": "PhoneGap"
+    },
+    "messages":
+    {
+        "no": "No",
+        "yes":"Yes",
+        "exit": "Really exit this application?",
+        "menu": "Current language: <em>__language__</em> -- <strong>__local__</strong> <code>__code__</code>",
+        "style": "<strong>Select Bootswatch.com style from dropdown.</strong><br /><br />This is only an example and changes to stylesheet are not remembered.<br /><br />Notice, that most non-standard stylesheets download extra fonts from Internet. Get them locally, to avoid extra costs for app user!",
+        "language": "<strong>Select language using dropdown.</strong><br /><br />This is only an example and and only few strings are actually translated, with only machine-translation done by Google Translate."
+    }
+}
