@@ -114,6 +114,7 @@
         console.log("Code = " + r.responseCode);
         console.log("Response = " + r.response);
         console.log("Sent = " + r.bytesSent);
+        $(document).trigger('imageUploaded');
         //alert(r.response);
     }
 
@@ -138,7 +139,7 @@
 
     </script>
     <script type="text/javascript">
-    $("#largeImage").on('load',function() {
+    function getTags() {
       var userCapturedImage = "http://www.tayabsoomro.me/uploads/myimg.jpg";
       var finalURL = 'https://api.clarifai.com/v1/tag/?url=' + userCapturedImage;
       $.ajax({
@@ -156,7 +157,8 @@
               alert(tags);
           }
       });
-    });
+    }
+    $(document).bind('imageUploaded', getTags);
     </script>
     </body>
 </html>
