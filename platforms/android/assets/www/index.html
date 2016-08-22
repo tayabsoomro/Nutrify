@@ -80,8 +80,6 @@
     // Called when a photo is successfully retrieved
     //
     function onPhotoURISuccess(imageURI) {
-      // Uncomment to view the image file URI
-      document.getElementById("choosepic").innerHTML = imageURI;
 
       // Get image handle
       //
@@ -113,7 +111,10 @@
     }
 
     function win(r){
-      alert(JSON.stringify(r));
+        console.log("Code = " + r.responseCode);
+        console.log("Response = " + r.response);
+        console.log("Sent = " + r.bytesSent);
+        //alert(r.response);
     }
 
     function fail(error){
@@ -138,7 +139,7 @@
     </script>
     <script type="text/javascript">
     $("#largeImage").on('load',function() {
-      var userCapturedImage = $("#largeImage").attr("src");
+      var userCapturedImage = "http://www.tayabsoomro.me/uploads/myimg.jpg";
       var finalURL = 'https://api.clarifai.com/v1/tag/?model=food-items-v1.0&url=' + userCapturedImage;
       alert(finalURL);
       $.ajax({
@@ -151,7 +152,7 @@
           },
           success: function(data){
 
-              alert(JSON.stringify(data));
+              alert("Works" + JSON.stringify(data));
           }
       });
     });
