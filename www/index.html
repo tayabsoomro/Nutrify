@@ -140,19 +140,20 @@
     <script type="text/javascript">
     $("#largeImage").on('load',function() {
       var userCapturedImage = "http://www.tayabsoomro.me/uploads/myimg.jpg";
-      var finalURL = 'https://api.clarifai.com/v1/tag/?model=food-items-v1.0&url=' + userCapturedImage;
-      alert(finalURL);
+      var finalURL = 'https://api.clarifai.com/v1/tag/?url=' + userCapturedImage;
       $.ajax({
           url: finalURL,
           type: 'GET',
           dataType: 'json',
           contentType: "application/json",
           beforeSend: function(xhr) {
-               xhr.setRequestHeader("Authorization", "Bearer urjuWGER2XVvlVaQTFYg4V7uRDjoLl")
+               xhr.setRequestHeader("Authorization", "Bearer xIeLDv524IQMQCZc4wq3bzQBybLtwb");
           },
           success: function(data){
 
-              alert("Works" + JSON.stringify(data));
+              //res["results"][0].result["tag"]["classes"]
+              var tags = data.results[0].result["tag"]["classes"];
+              alert(tags);
           }
       });
     });
