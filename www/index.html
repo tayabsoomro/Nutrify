@@ -141,7 +141,7 @@
     <script type="text/javascript">
     function getTags() {
       var userCapturedImage = "http://www.tayabsoomro.me/uploads/myimg.jpg";
-      var finalURL = 'https://api.clarifai.com/v1/tag/?url=' + userCapturedImage;
+      var finalURL = 'https://api.clarifai.com/v1/tag/?model=food-items-v1.0&url=' + userCapturedImage;
       $.ajax({
           url: finalURL,
           type: 'GET',
