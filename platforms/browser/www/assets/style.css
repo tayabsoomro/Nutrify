@@ -1,0 +1,47 @@
+/*
+ * General styles
+ */
+body
+{
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+		color: #000;
+		background-color: #81DAF5 !important;
+}
+
+code, pre {font-size: 16px !important}
+
+kbd
+{
+    padding: 2px 4px;
+    color: #FFF;
+    white-space: nowrap;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+/*
+ * Local styles
+ */
+#menu-buttons .btn {margin: 2px}
+
+#audio-buttons .btn
+{
+    margin: 2px;
+    width: 90px;
+    text-align: left;
+}
+
+#menu-buttons .well, #audio-buttons .well {padding: 7px}
+
+#menu-buttons .btn-group + .btn-group {margin: 0px}
+
+#menu-buttons .btn-group > .btn.dropdown-leader {margin-right: 0px}
+
+#menu-buttons .btn-group > .btn.dropdown-toggle {margin-left: 0px}
+
+/*
+ * Bootstrap fixup
+ */
+.nav-tabs, .nav-pills {position: relative;}

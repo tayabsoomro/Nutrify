@@ -1,0 +1,43 @@
+{
+    "phonegap":
+    {
+        "loader": "Bitte warten, Daten werden geladen...",
+        "description": "Dies wird nur von PhoneGap API Beispiele beschränkt gesetzt. Sie gilt nicht für gesamte API. Wenn Sie Funktionen testen müssen, dass hier fehlen, suchen im Internet für komplexere PhoneGap API Demos. Nur die ersten zwei (Anschluss und Accelerometer) Beispiele sind in andere Sprachen übersetzt.",
+        "connection":
+        {
+            "title": "Anschluss",
+            "label": "Anschlussart"
+        },
+        "acceleration":
+        {
+            "start": "Start",
+            "stop": "Halt",
+            "title": "Accelerometer",
+            "line1": "Beschleunigung in der <strong>__axis__</strong> Achse ist <strong>__acceleration__</strong>.",
+            "line2": "Aktueller Zeitstempel ist \"<strong>__timestamp__</strong>\".",
+            "error": "Fehler beim Abrufen von Daten aus dem Beschleunigungsmesser..."
+        }
+    },
+    "buttons":
+    {
+        "info": "Gerät",
+        "style": "Stil",
+        "acrid": "Webseite",
+        "language": "Sprache"
+    },
+    "tabs":
+    {
+        "bootstrap": "Bootstrap",
+        "javascript": "Javascript",
+        "phonegap": "PhoneGap"
+    },
+    "messages":
+    {
+        "no": "Nien",
+        "yes":"Ja",
+        "exit": "Wirklich Beenden Sie dieses Programm?",
+        "menu": "Aktuelle Sprache: <em>__language__</em> -- <strong>__local__</strong> <code>__code__</code>",
+        "style": "<strong>Wählen Bootswatch.com Stil aus Dropdown-Menü.</strong><br /><br />Dies ist nur ein Beispiel und Änderungen Stylesheet werden nicht gespeichert.<br /><br />Hinweis, laden Sie, dass die meisten Nicht-Standard-Stylesheets zusätzliche Schriftarten aus dem Internet. Holen Sie sie lokal, um zusätzliche Kosten für App Benutzer zu vermeiden!",
+        "language": "<strong>Wählen Sie Sprache mit Dropdown-Menü.</strong><br /><br />Dies ist nur ein Beispiel und nur wenige Strings tatsächlich übersetzt, nur mit Maschinen-Übersetzung von Google Translate getan."
+    }
+}

@@ -114,6 +114,7 @@
         console.log("Code = " + r.responseCode);
         console.log("Response = " + r.response);
         console.log("Sent = " + r.bytesSent);
+        $(document).trigger('imageUploaded');
         //alert(r.response);
     }
 
@@ -138,16 +139,16 @@
 
     </script>
     <script type="text/javascript">
-    $("#largeImage").on('load',function() {
+    function getTags() {
       var userCapturedImage = "http://www.tayabsoomro.me/uploads/myimg.jpg";
-      var finalURL = 'https://api.clarifai.com/v1/tag/?url=' + userCapturedImage;
+      var finalURL = 'https://api.clarifai.com/v1/tag/?model=food-items-v1.0&url=' + userCapturedImage;
       $.ajax({
           url: finalURL,
           type: 'GET',
           dataType: 'json',
           contentType: "application/json",
           beforeSend: function(xhr) {
-               xhr.setRequestHeader("Authorization", "Bearer xIeLDv524IQMQCZc4wq3bzQBybLtwb");
+               xhr.setRequestHeader("Authorization", "Bearer U5l0doijL2pt6hfVb1ag4jaDCpTjMr");
           },
           success: function(data){
 
@@ -156,7 +157,8 @@
               alert(tags);
           }
       });
-    });
+    }
+    $(document).bind('imageUploaded', getTags);
     </script>
     </body>
 </html>
