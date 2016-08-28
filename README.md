@@ -21,7 +21,7 @@ Nutrify was started by myself and one of my friend [Ben](https://github.com/Ben0
 
 ## Contact
 
-Get in touch with us:
+Get in touch with us: 
 
 ###### Tayab
 1. [GitHub](https://www.github.com/tayabsoomro)
